@@ -1,0 +1,55 @@
+# --------------------------------------------------------------
+# INSTRUCTIONS: Getting Started With Powershell 
+# DESCRIPTION:  This quickstart is meant to get you started quickly when building Powershell Scripts.
+#		It will NOT necessarily provide the most optimized scripts, but will help you rapidly develop scripts to get things done.
+#		
+#		What you get:
+#
+#		- A sample base script that you can use to fill in your specifics.
+#		- A library of sample script calls to perform given tasks.
+#		- A script assistant that can be used to build a script based on the sample base and sample calls. (COMING SOON)
+#	
+# PRE-REQUISITES: Before running this script ensure:
+#
+#     - We recommend placing the _rwc folder in the root of c:\ if you move it then edit the Settings.xml and replace c:\_rwc with the location you are storing the folder.
+#
+# HISTORY:
+#
+#      Version   Date                         Changes
+#
+#      v0.1      January 7, 2016              Initial Version of Instructions
+#
+#------------------------------------------------------------
+
+Install Instructions
+--------------------
+
+1) Copy the contents of this folder to the place you want your script to live. From now on we will call this the "Powershell Root Folder"
+
+2) Edit the settings.xml file so the AssemblyFilePath matches where you will store any custom binaries. We will call this the "Powershell Custom Binaries Folder"
+
+3) Rename "Sample Base Script.ps1" to match your script name. We will refer to this script as "your main Powershell Script".
+
+4) Edit your main Powershell Script, changing the name and description.
+ 
+5) Open a command prompt using Run As Administrator.
+   Ensure the command prompt is pointing at the Powershell Root folder.
+   You can run someting like this to change directory.
+
+	cd C:\_rwc
+
+6) Run the command below but change MyScript to you script name:
+
+	PowerShell.exe -Command "& {Start-Process PowerShell.exe -ArgumentList '-ExecutionPolicy Bypass -File ""%MyScript.ps1""' -Verb RunAs}"
+
+7) Look in the task_templates folder for tasks to add to your script. Task templates are stored in files with extension of .ps1t
+   There is a corresponding file with extension .HELP that you can open in Notepad to get more information on the task and how to use it.
+   Each task template has 3 sections: 
+
+	1) The comment block which exists between the #----- and #---- this section provides developer notes regarding the task.
+	2) The settings block which exists between #------ and #~~~~ this section provides settings for automated applications such as PowerScriptBuilder.
+           It will show all the token names but may contain other default settings as well.
+	3) The code block which is everything after the #~~~~~~
+
+
+ 

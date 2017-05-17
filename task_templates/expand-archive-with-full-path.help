@@ -1,0 +1,20 @@
+# -----------------------------------------------------------
+# TASK: expand-archive-with-full-path
+# DESCRIPTION: This task extracts the zip file given its full path to a folder specified with a full path.
+#
+# RECOMMENDATIONS: 
+#
+#      If you are extracting multiple zip files, you may want to use "expand-archive-multiple-zips" which expects the zip files in a given folder and unzips them all under a given folder.
+#
+# INSTRUCTIONS: 
+#
+#      Replace the {ZIP_FILE_NAME} with the full path to your zip file.  
+#      Replace the {UNZIP_PATH} with the full path to the folder to extract the file.  
+#
+# HISTORY:
+#
+#      Version   Date                         Changes
+#
+#      v0.1      May 17, 2017                 Initial Version of Task
+#
+#------------------------------------------------------------
